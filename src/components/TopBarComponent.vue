@@ -3,7 +3,7 @@
     <div class="col-md-4">
       <div class="d-flex flex-row align-items-center">
         <div class="p-2">
-          <Avatar image="src/assets/images/andrei.jpg" size="large" shape="circle" />
+          <Avatar image="/images/andrei.jpg" size="large" shape="circle" />
         </div>
         <div class="p-2">
           <span class="span">Andrei Silviu Zaharia</span>
