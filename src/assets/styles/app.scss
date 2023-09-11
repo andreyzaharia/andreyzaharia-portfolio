@@ -1,0 +1,72 @@
+@import "_variables";
+// Bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap';
+::selection {
+    color: white;
+    background: $primary;
+}
+
+// Code for Firefox
+::-moz-selection {
+    color: white;
+    background: $primary;
+}
+
+// Width
+::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+}
+
+// Track
+::-webkit-scrollbar-track {
+    background: rgba(#000000, 0.2);
+    border-radius: $border-radius;
+}
+
+// Handle
+::-webkit-scrollbar-thumb {
+    background: $primary;
+    border-radius: $border-radius;
+}
+
+// Handle on hover
+::-webkit-scrollbar-thumb:hover {
+    background: darken($primary, 20%);
+}
+
+#app {
+    section {
+        padding-top: 5rem;
+    }
+    .datatable {
+        a {
+            color: $primary;
+            text-decoration: none;
+        }
+    }
+    // hr {
+    // 	height: 2px;
+    // 	background-color: white;
+    // }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.border-radius {
+    border-radius: $border-radius;
+}
+
+.box-shadow {
+    box-shadow: $smooth-box-shadow;
+}
+
+.white-space-pre-wrap {
+    white-space: pre-wrap;
+}
+
+.p-toast {
+    max-width: calc(100% - 40px); // El 40 sale de la position que tiene el toast por defecto según la librería
+}

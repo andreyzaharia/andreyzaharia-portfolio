@@ -1,0 +1,73 @@
+$primary: #000B33;
+$secondary: #ef8000;
+$dark: #000B33;
+$grey: #ABAFB3;
+$white: #FBFCFF;
+$fondo: #eff3f8;
+$light-primary: #ff6678;
+$light-secondary: #ffb25a;
+$dark-grey: #656575;
+$light-grey: #E3E3E3;
+$success: #31C96F;
+$warning: #FFAF00;
+$danger: #FF0C51;
+$info: #0061FF;
+$light-success: #EEF9F1;
+$light-warning: #FFF3DD;
+$light-danger: #FFEAF5;
+$light-info: #E0EFFF;
+$transition: 0.3s ease all;
+$border-radius: 16px;
+$smooth-box-shadow: 0.6px 0.6px 2.2px rgba(0, 0, 0, 0.02),
+1.3px 1.3px 5.3px rgba(0, 0, 0, 0.028),
+2.5px 2.5px 10px rgba(0, 0, 0, 0.035),
+4.5px 4.5px 17.9px rgba(0, 0, 0, 0.042),
+8.4px 8.4px 33.4px rgba(0, 0, 0, 0.05),
+20px 20px 80px rgba(0, 0, 0, 0.07);
+// Mobiles
+$mobile-min-width: 280px;
+$mobile-max-width: 500px;
+// Small mobiles
+$small-mobile-min-width: 280px;
+$small-mobile-max-width: 339px;
+// Large mobiles
+$large-mobile-min-width: 340px;
+$large-mobile-max-width: 500px;
+// Tablets
+$tablet-min-width: 550px;
+$tablet-max-width: 1024px;
+// Small tablets
+$small-tablet-min-width: 550px;
+$small-tablet-max-width: 960px;
+// Large tablets
+$large-tablet-min-width: 1025px;
+$large-tablet-max-width: 1400px;
+// Laptops
+$laptop-min-width: 1080px;
+$laptop-max-width: 1440px;
+@media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {}
+
+@media (min-width: $small-mobile-min-width) and (max-width: $small-mobile-max-width) {}
+
+@media (min-width: $large-mobile-min-width) and (max-width: $large-mobile-max-width) {}
+
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {}
+
+@media (min-width: $small-tablet-min-width) and (max-width: $small-tablet-max-width) {}
+
+@media (min-width: $large-tablet-min-width) and (max-width: $large-tablet-max-width) {}
+
+@media (min-width: $laptop-min-width) and (max-width: $laptop-max-width) {}
+
+@each $color,
+$value in (primary: $primary, secondary: $secondary, dark: $dark, grey: $grey, white: $white, light-primary: $light-primary, light-secondary: $light-secondary, dark-grey: $dark-grey, light-grey: $light-grey, success: $success, warning: $warning, danger: $danger, info: $info, light-success: $light-success, light-warning: $light-warning, light-danger: $light-danger, light-info:$light-info) {
+    .text-#{"" + $color} {
+        color: $value !important;
+    }
+    .bg-#{"" + $color} {
+        background-color: $value !important;
+    }
+    .border-#{"" + $color} {
+        border-color: $value !important;
+    }
+}
