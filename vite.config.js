@@ -8,7 +8,7 @@ export default defineConfig({
     plugins: [
         vue(),
     ],
-    base: "/andreyzaharia.github.io/",
+    base: "/andreyzaharia-portfolio/",
 
     resolve: {
         alias: {
