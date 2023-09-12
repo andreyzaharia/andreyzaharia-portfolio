@@ -1,5 +1,7 @@
 <template>
   <div id="layout">
+    <Toast />
+
     <div class="top-bar-section">
       
       <TopBarComponent/>
@@ -20,11 +22,13 @@
 <script>
 
 import TopBarComponent from './TopBarComponent.vue';
+import Toast from "primevue/toast";
 
 
 export default {
   components: {
-    TopBarComponent
+    TopBarComponent,
+    Toast
   }
 
 };

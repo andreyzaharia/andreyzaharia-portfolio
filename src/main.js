@@ -10,11 +10,13 @@ import PrimeVue from "primevue/config";
 import "primeicons/primeicons.css";
 import "primevue/resources/primevue.min.css";
 
+import ToastService from "primevue/toastservice";
 
 
 const app = createApp(App)
 
-app.use(router)
+app.use(router);
+app.use(ToastService);
 
 app.use(PrimeVue, {
     ripple: true,
