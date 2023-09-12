@@ -1,0 +1,24 @@
+.p-float-label input:focus~label {
+    left: 0;
+}
+
+.p-float-label input.p-filled~label {
+    left: 0;
+}
+
+.p-dropdown-panel {
+    box-shadow: $smooth-box-shadow;
+}
+
+.p-selectbutton {
+    .p-button {
+        border: 1px solid lightgray !important;
+    }
+}
+
+.p-button-rounded {
+    border: 1px solid !important;
+    &:enabled:hover {
+        background-color: rgba($primary, 0.2) !important;
+    }
+}
