@@ -134,7 +134,7 @@ export default {
 
       const emailParams = {
         to_name: this.subject,
-        from_name: this.subject,
+        from_name: this.email,
         message: this.message,
       };
 
